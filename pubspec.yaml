@@ -1,0 +1,25 @@
+name: quizhill_flutter
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_hooks: ^0.20.5
+  go_router: ^14.8.0
+  hooks_riverpod: ^2.6.1 # Stabilna wersja, która nie gryzie się z SDK
+  riverpod_annotation: ^2.6.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.9
+  riverpod_generator: ^2.6.2 # Niezbędne do obsługi adnotacji
+
+flutter:
+  uses-material-design: true
