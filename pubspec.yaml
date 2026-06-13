@@ -13,6 +13,7 @@ dependencies:
   go_router: ^14.8.0
   hooks_riverpod: ^2.6.1 # Stabilna wersja, która nie gryzie się z SDK
   riverpod_annotation: ^2.6.1
+  wakelock_plus: ^1.6.1
 
 dev_dependencies:
   flutter_test:

@@ -4,7 +4,9 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:quizhill_flutter/core/widgets/scaffold_navbar.dart';
 import 'package:quizhill_flutter/features/home/presentation/pages/home_page.dart';
 import 'package:quizhill_flutter/features/profile/presentation/pages/profile_page.dart';
+import 'package:quizhill_flutter/features/quiz/presentation/pages/quiz.dart';
 import 'package:quizhill_flutter/features/search/presentation/pages/search_page.dart';
+import 'package:quizhill_flutter/features/search/presentation/pages/search_results.dart';
 
 final rootNavigatorKey = GlobalKey<NavigatorState>();
 final shellNavigatorKey = GlobalKey<NavigatorState>();
@@ -45,6 +47,17 @@ final routerProvider = Provider<GoRouter>((ref) {
             ],
           ),
         ],
+      ),
+      GoRoute(
+        path: '/quizes',
+        builder: (context, state) => const SearchResults(),
+      ),
+      GoRoute(
+        path: '/quizes/:id',
+        builder: (context, state) {
+          final quizId = state.pathParameters['id'];
+          return Quiz(quizId: quizId!);
+        },
       ),
     ],
   );
