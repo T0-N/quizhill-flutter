@@ -24,3 +24,17 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+   - family: Fustat
+     fonts:
+     - asset: assets/fonts/Fustat/Fustat-Regular.ttf
+     - asset: assets/fonts/Fustat/Fustat-ExtraBold.ttf
+       weight: 800
+     - asset: assets/fonts/Fustat/Fustat-Bold.ttf
+       weight: 700
+     - asset: assets/fonts/Fustat/Fustat-SemiBold.ttf
+       weight: 600      
+     - asset: assets/fonts/Fustat/Fustat-Light.ttf
+       weight: 300
+     - asset: assets/fonts/Fustat/Fustat-ExtraLight.ttf
+       weight: 200

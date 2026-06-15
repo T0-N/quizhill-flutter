@@ -10,6 +10,7 @@ class QuizhillTheme {
   static ThemeData get lightTheme {
     return ThemeData(
       useMaterial3: true,
+      fontFamily: 'Fustat',
       colorScheme: ColorScheme.fromSeed(
         seedColor: QuizhillColors.silesiant,
         brightness: Brightness.light,
@@ -20,6 +21,7 @@ class QuizhillTheme {
   static ThemeData get darkTheme {
     return ThemeData(
       useMaterial3: true,
+      fontFamily: 'Fustat',
       colorScheme: ColorScheme.fromSeed(
         seedColor: QuizhillColors.silesiantDark,
         brightness: Brightness.dark,

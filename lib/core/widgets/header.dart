@@ -9,10 +9,26 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Text(title),
+      title: Row(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
+        spacing: 3,
+        children: [
+          Text(
+            title,
+            style: TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight(700),
+              color: Theme.of(context).colorScheme.primary,
+            ),
+          ),
+        ],
+      ),
+      centerTitle: true,
       leading: showBack
           ? IconButton(
               onPressed: () => Navigator.of(context).pop(),
+              color: Theme.of(context).colorScheme.primary,
               icon: const Icon(Icons.arrow_back),
             )
           : null,

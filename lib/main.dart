@@ -9,6 +9,8 @@ import 'package:quizhill_flutter/core/theme/theme_mode_notifier.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
   if (kDebugMode) {
     await WakelockPlus.enable();
   }
